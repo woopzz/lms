@@ -1,0 +1,9 @@
+**/.git
+**/.env
+**/db.sqlite3
+**/.vscode
+**/__pycache__
+**/.gitignore
+**/Dockerfile
+**/node_modules
+README.md

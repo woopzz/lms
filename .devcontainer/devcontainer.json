@@ -1,0 +1,14 @@
+{
+    "name": "LMS",
+    "dockerFile": "../Dockerfile",
+    "forwardPorts": [8000],
+
+    "remoteUser": "appuser",
+    "workspaceFolder": "/app",
+    "mounts": [
+        "type=bind,source=${localWorkspaceFolder},target=/app",
+        "type=bind,source=${localWorkspaceFolder}/.env,target=/app/lms/.env,readonly"
+    ],
+
+    "extensions": ["ms-python.python", "esbenp.prettier-vscode"]
+}
